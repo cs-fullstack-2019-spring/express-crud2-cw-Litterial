@@ -1,4 +1,4 @@
-var mongoose = require('mongoose');
+var mongoose = require('mongoose');  //requires mongooses to connect model to database
 var Schema = mongoose.Schema;
 
 var PostSchema = new Schema(
@@ -10,4 +10,4 @@ var PostSchema = new Schema(
     });
 
 //Export model
-module.exports = mongoose.model('Post', PostSchema);
+module.exports = mongoose.model('Post', PostSchema);  //post is the name of our collection
